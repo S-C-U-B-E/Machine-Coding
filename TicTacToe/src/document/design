@@ -1,0 +1,17 @@
+Contents -->
+Board
+Player
+Strategy/Winning Logic
+Game
+
+States of the Contents -->
+Board -> 3 x 3
+Player -> 2
+Strategy -> WON = ( Diagonal (LEFT/RIGHT) , Horizontal , Vertical ) /  DRAW 
+Game -> Start / Stop , Symbol array (A player can choose their choice of symbol among the given options of X / O)
+
+Responsibilities -->
+Board -> Will keep the current X , O entered values stored -> Matrix -> 2D Array (Character) -> Will showcase as dashes on screen
+Player -> Won / Loss (Boolean) , Current turn (Boolean) , turn count (Integer) , Symbol X / O (Character)
+Strategy -> Will check for winning logic only when a player has reached turn count == board length -> will return Boolean
+Game -> Initially Start with Player 1 -> Will stop based on Strategy's return value
