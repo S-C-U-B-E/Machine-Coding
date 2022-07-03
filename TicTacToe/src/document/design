@@ -15,3 +15,5 @@ Board -> Will keep the current X , O entered values stored -> Matrix -> 2D Array
 Player -> Won / Loss (Boolean) , Current turn (Boolean) , turn count (Integer) , Symbol X / O (Character)
 Strategy -> Will check for winning logic only when a player has reached turn count == board length -> will return Boolean
 Game -> Initially Start with Player 1 -> Will stop based on Strategy's return value
+
+GamePlay (takeInputs) -> Game (Initialize Player , Board) 

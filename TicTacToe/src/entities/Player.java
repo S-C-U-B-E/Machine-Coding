@@ -31,14 +31,20 @@ public class Player {
 	public int getTurnCount() {
 		return turnCount;
 	}
-	public void setTurnCount(int turnCount) {
-		this.turnCount = turnCount;
+	public void incrementTurnCount() {
+		this.turnCount++;
 	}
 	public char getSymbol() {
 		return symbol;
 	}
 	public void setSymbol(char symbol) {
 		this.symbol = symbol;
+	}
+
+	@Override
+	public String toString() {
+		return "Player [isWon=" + isWon + ", isTurn=" + isTurn + ", turnCount=" + turnCount + ", symbol=" + symbol
+				+ "]";
 	}
 	
 	
